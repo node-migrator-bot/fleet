@@ -12,7 +12,7 @@ p.on('error', function (err) {
 
 p.hub(function (hub) {
     var opts = {
-        drone : argv.drone,
+        drone : argv.drone || '*',
         drones : argv.drones,
         repo : argv.repo || git.repoName(),
         commit : argv.commit,
