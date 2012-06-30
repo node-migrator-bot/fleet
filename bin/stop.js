@@ -10,16 +10,17 @@ p.on('error', function (err) {
     console.dir(err);
 });
 
-if (argv._.length === 0) {
-    console.error('Usage: fleet stop PID');
+if (argv._.length === 0 && !argv.all && !argv.commit) {
+    console.error('Usage: fleet stop [--all | --commit=<hash> | PID PID...]');
     process.exit();
 }
 
 p.hub(function (hub) {
     var opts = {
-        drone : argv.drone,
+        drone : argv.drone || '*',
         drones : argv.drones,
-        pid : argv._.map(function (x) { return x.toString().replace(/^pid#/, '') }),
+        pid : argv.all ? '*' : argv._.slice(1).map(function (x) { return x.toString().replace(/^pid#/, '') }),
+        commit : argv.commit,
     };
     hub.stop(opts, function (err, drones) {
         Object.keys(drones).forEach(function (id) {
