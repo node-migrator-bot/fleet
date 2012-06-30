@@ -17,6 +17,9 @@ p.hub(function (hub) {
         repo : argv.repo || git.repoName(),
         commit : argv.commit,
         command : argv._,
+        limit : argv.limit,
+        count : argv.count || 1,
+        errlimit : argv.errlimit || 5,
         env : argv.env || {},
     };
     if (!opts.repo) {
