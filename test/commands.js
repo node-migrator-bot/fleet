@@ -94,11 +94,15 @@ test('git init, git add, git commit, fleet remote add, fleet deploy, fleet spawn
 });
 
 test('fleet ps', function (t) {
-    t.plan(4);
+    t.plan(2);
     var ps = fleet('ps.js', [], { cwd: dir.gitRepo } );
     ps.stderr.pipe(process.stderr, { end : false });
+    var output = '';
     ps.stdout.on('data', function (data) {
-        t.ok(String(data).match(/drone/), 'drone should be matched in ps');
+        output += data;
+    });
+    ps.stdout.on('end', function () {
+        t.equal(output.match(/drone/g).length, procs.drone.length, 'drone should be matched in ps');
     });
     ps.on('exit', function (code, signal) {
         t.ok(true, 'fleet ps');
