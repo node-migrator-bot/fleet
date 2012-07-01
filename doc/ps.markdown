@@ -1,9 +1,9 @@
-fleet-ps(1) -- List the running processes on the drones.
+s8fleet-ps(1) -- List the running processes on the drones.
 ========================================================
 
 ## SYNOPSIS
 
-    fleet ps [<options>]
+    s8fleet ps [<options>]
 
 ## DESCRIPTION
 
@@ -16,7 +16,7 @@ output.
 
 ## OPTIONS
 
-If you haven't set a remote with `fleet remote`, you'll need to specify these
+If you haven't set a remote with `s8fleet remote`, you'll need to specify these
 options:
 
 * hub - location of the hub as a "host:port" string
@@ -24,7 +24,7 @@ options:
 
 ## EXAMPLE
 
-    $ fleet ps
+    $ s8fleet ps
     drone#3dfe17b8
     ├─┬ pid#1e99f4
     │ ├── status:   running

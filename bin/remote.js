@@ -20,5 +20,5 @@ else if (cmd === 'ls' || cmd === 'list') {
     console.log(JSON.stringify(remote.list(), undefined, 2));
 }
 else {
-    console.error('Usage: fleet remote (add|rm|ls)');
+    console.error('Usage: s8fleet remote (add|rm|ls)');
 }

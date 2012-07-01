@@ -1,16 +1,16 @@
-fleet-exec(1) -- Run commands on drones.
+s8fleet-exec(1) -- Run commands on drones.
 ========================================
 
 ## SYNOPSIS
 
-    fleet exec [<options>] -- [<command>...]
+    s8fleet exec [<options>] -- [<command>...]
 
 ## DESCRIPTION
 
 Execute `<command>` on a drone and print the output of the command to the local
 terminal.
 
-Unlike `fleet spawn`, this command does not restart the process when
+Unlike `s8fleet spawn`, this command does not restart the process when
 it exits.
 
 Your spawned process will get the `$REPO` name, `$COMMIT` hash, `$DRONE_ID`, and
@@ -26,7 +26,7 @@ Your spawned process will get the `$REPO` name, `$COMMIT` hash, `$DRONE_ID`, and
 * repo - Execute the command under this repo name.
   Defaults to the closest directory name with a `.git/` in it.
 
-If you haven't set a remote with `fleet remote`, you'll need to specify these
+If you haven't set a remote with `s8fleet remote`, you'll need to specify these
 options:
 
 * hub - location of the hub as a "host:port" string

@@ -1,9 +1,9 @@
-fleet-monitor(1) -- Show service events system-wide.
+s8fleet-monitor(1) -- Show service events system-wide.
 ====================================================
 
 ## SYNOPSIS
 
-    fleet monitor [<options>]
+    s8fleet monitor [<options>]
 
 ## DESCRIPTION
 
@@ -12,7 +12,7 @@ of the drones.
 
 ## OPTIONS
 
-If you haven't set a remote with `fleet remote`, you'll need to specify these
+If you haven't set a remote with `s8fleet remote`, you'll need to specify these
 options:
 
 * hub - location of the hub as a "host:port" string
@@ -20,7 +20,7 @@ options:
 
 ## EXAMPLE
 
-    $ fleet monitor
+    $ s8fleet monitor
     (spawned 3dfe17b8#1e99f4 : node server.js 8888)
     [3dfe17b8#1e99f4] listening on :8888
     (exited 3dfe17b8#751e9f : node server.js 8889)

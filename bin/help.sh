@@ -1,5 +1,5 @@
 #!/bin/bash
-rootdir=$(fleet rootdir)
+rootdir=$(s8fleet rootdir)
 
 if test -z "$1" || test "$1" = "commands"; then
     cat "$rootdir/doc/commands"

@@ -1,6 +1,6 @@
 #!/bin/bash
 if test -z "$*"; then
-  fleet-help
+  s8fleet-help
 else
-  fleet-$*
+  s8fleet-$*
 fi

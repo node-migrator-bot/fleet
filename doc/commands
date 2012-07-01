@@ -1,4 +1,4 @@
-Usage: s8fleet <command> [<args>]
+Usage: s8s8fleet <command> [<args>]
 
 The commands are:
   deploy   Push code to drones.
@@ -12,4 +12,4 @@ The commands are:
   spawn    Run services on drones.
   stop     Stop processes running on drones.
 
-For help about a command, try `s8fleet help <command>`.
+For help about a command, try `s8s8fleet help <command>`.

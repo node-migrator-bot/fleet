@@ -1,9 +1,9 @@
-fleet-deploy(1) -- Push code to drones.
+s8fleet-deploy(1) -- Push code to drones.
 =======================================
 
 ## SYNOPSIS
 
-    fleet deploy [<options>]
+    s8fleet deploy [<options>]
 
 ## DESCRIPTION
 
@@ -16,7 +16,7 @@ directory.
 * repo - Push code into this repo name. Defaults to the closest directory name
   with a `.git/` in it.
 
-If you haven't set a remote with `fleet remote`, you'll need to specify these
+If you haven't set a remote with `s8fleet remote`, you'll need to specify these
 options:
 
 * hub - location of the hub as a "host:port" string
@@ -26,8 +26,8 @@ options:
 
 Usually you'll just want to:
 
-    fleet deploy
+    s8fleet deploy
 
 but sometimes you'll want to deploy a specific commit:
 
-    fleet deploy --commit=8431261ee2149e6d39863a6f3d70fe88375c6210
+    s8fleet deploy --commit=8431261ee2149e6d39863a6f3d70fe88375c6210

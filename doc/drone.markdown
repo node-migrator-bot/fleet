@@ -1,13 +1,13 @@
-fleet-drone(1) -- Connect to a hub as a worker.
+s8fleet-drone(1) -- Connect to a hub as a worker.
 ===============================================
 
 ## SYNOPSIS
 
-    fleet drone [<options>]
+    s8fleet drone [<options>]
 
 ## DESCRIPTION
 
-Connect to a fleet hub and register as a worker drone.
+Connect to a s8fleet hub and register as a worker drone.
 
 ## OPTIONS
 
@@ -16,4 +16,4 @@ Connect to a fleet hub and register as a worker drone.
 
 ## EXAMPLE
 
-    fleet drone --hub=10.0.5.2:7000 --secret=beepboop
+    s8fleet drone --hub=10.0.5.2:7000 --secret=beepboop

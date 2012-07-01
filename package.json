@@ -1,26 +1,26 @@
 {
-    "name" : "fleet",
-    "description" : "command a cluster of processes ",
-    "version" : "0.0.9",
+    "name" : "s8fleet",
+    "description" : "Tweaked version of substack's fleet module",
+    "version" : "0.0.1",
     "repository" : {
         "type" : "git",
-        "url" : "git://github.com/substack/fleet.git"
+        "url" : "git://github.com/carlos8f/fleet.git"
     },
     "main" : "index.js",
     "bin" : {
-        "fleet" : "bin/command.sh",
-        "fleet-rootdir" : "bin/rootdir.js",
-        "fleet-help" : "bin/help.sh",
-        "fleet-remote" : "bin/remote.js",
-        "fleet-deploy" : "bin/deploy.js",
-        "fleet-drone" : "bin/drone.js",
-        "fleet-hub" : "bin/hub.js",
-        "fleet-ps" : "bin/ps.js",
-        "fleet-monitor" : "bin/monitor.js",
-        "fleet-spawn" : "bin/spawn.js",
-        "fleet-stop" : "bin/stop.js",
-        "fleet-exec" : "bin/exec.js",
-        "fleet-hosts" : "bin/hosts.js"
+        "s8fleet" : "bin/command.sh",
+        "s8fleet-rootdir" : "bin/rootdir.js",
+        "s8fleet-help" : "bin/help.sh",
+        "s8fleet-remote" : "bin/remote.js",
+        "s8fleet-deploy" : "bin/deploy.js",
+        "s8fleet-drone" : "bin/drone.js",
+        "s8fleet-hub" : "bin/hub.js",
+        "s8fleet-ps" : "bin/ps.js",
+        "s8fleet-monitor" : "bin/monitor.js",
+        "s8fleet-spawn" : "bin/spawn.js",
+        "s8fleet-stop" : "bin/stop.js",
+        "s8fleet-exec" : "bin/exec.js",
+        "s8fleet-hosts" : "bin/hosts.js"
     },
     "keywords" : [
         "cluster",

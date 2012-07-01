@@ -11,7 +11,7 @@ p.on('error', function (err) {
 });
 
 if (argv._.length === 0 && !argv.all && !argv.commit) {
-    console.error('Usage: fleet stop [--all | --commit=<hash> | PID PID...]');
+    console.error('Usage: s8fleet stop [--all | --commit=<hash> | PID PID...]');
     process.exit();
 }
 
