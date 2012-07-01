@@ -16,10 +16,15 @@ p.hub.on('up', argv.json ? raw : text);
 
 function text (hub) {
     var em = new EventEmitter;
+    var addrs = {};
+
+    em.on('addr', function (key, addr) {
+        addrs[key] = addr;
+    });
     
     em.on('data', function (key, procs) {
         var s = archy({
-            label : 'drone#' + key,
+            label : 'drone#' + key + ' (' + addrs[key] + ')',
             nodes : Object.keys(procs).map(function (id) {
                 var p = procs[id];
                 return {

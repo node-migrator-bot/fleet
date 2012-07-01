@@ -25,7 +25,7 @@ options:
 ## EXAMPLE
 
     $ s8fleet ps
-    drone#3dfe17b8
+    drone#3dfe17b8 (1.2.3.4)
     ├─┬ pid#1e99f4
     │ ├── status:   running
     │ ├── commit:   webapp/1b8050fcaf8f1b02b9175fcb422644cb67dc8cc5
